@@ -741,3 +741,9 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.carousel {
+  width: fit-content;
+  height: fit-content;
+  background-color: #181a27 !important;
+}

@@ -27,7 +27,7 @@ function AboutCard() {
               <ImPointRight /> Pickelball
             </li>
             <li className="about-activity">
-              <ImPointRight /> Board games
+              <ImPointRight /> 3D design in Blender
             </li>
           </ul>
 
