@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import liareports from "../../Assets/Projects/liareports.png";
+import liareports from "../../Assets/Projects/liareports/liareports.png";
+import liareports_carousel1 from "../../Assets/Projects/liareports/carouselPhoto1.png";
+import liareports_carousel2 from "../../Assets/Projects/liareports/carouselPhoto2.png";
+import liareports_carousel3 from "../../Assets/Projects/liareports/carouselPhoto3.png";
+import liareports_carousel4 from "../../Assets/Projects/liareports/carouselPhoto4.png";
+import liareports_carousel5 from "../../Assets/Projects/liareports/carouselPhoto5.png";
+import linear_regression from "../../Assets/Projects/linear_regression/linear_regression.png";
+import linear_regression_carousel1 from "../../Assets/Projects/linear_regression/carouselPhoto1.png";
+import linear_regression_carousel2 from "../../Assets/Projects/linear_regression/carouselPhoto2.png";
+import linear_regression_carousel3 from "../../Assets/Projects/linear_regression/carouselphoto3.png";
+import flexsim from "../../Assets/Projects/flexsim/flexsim.png";
+import flexsim_carousel1 from "../../Assets/Projects/flexsim/carouselPhoto1.png";
+import flexsim_carousel2 from "../../Assets/Projects/flexsim/carouselPhoto2.png";
 
 function Projects() {
   return (
@@ -24,8 +30,15 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              carouselImages={[liareports, bitsOfCode, suicide]}
-              imgPath={liareports}
+              imgPath={liareports} //Jan 2023
+              carouselImages={[
+                liareports,
+                liareports_carousel1,
+                liareports_carousel2,
+                liareports_carousel3,
+                liareports_carousel4,
+                liareports_carousel5,
+              ]}
               isBlog={false}
               title="LIAReports"
               description="I developed this next.js React web app from scratch to standardize and expedite the design process. It utilizes a prisma db to store information on parts, manufacturers, vendors, and projects. Designers can build out hierarchical projects and populate them with parts, and project managers can track the order and receipt of those parts. Additonally, purchase orders and packing slips can be generated as PDFs."
@@ -33,30 +46,37 @@ function Projects() {
               //demoLink="https://chatify-49.web.app/"
             />
           </Col>
-          {/* 
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={linear_regression} //July 2023
+              carouselImages={[
+                linear_regression,
+                linear_regression_carousel1,
+                linear_regression_carousel2,
+                linear_regression_carousel3,
+              ]}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Linear Regression"
+              description="This is a tool I built using PySimpleGUI, matplotlib, and scikit. The user can choose a csv with an x vector and a y vector to determine the level of corellation between the data sets. "
+              ghLink="https://github.com/christopherparker1923/linear-regression"
+              //demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={flexsim}
+              carouselImages={[flexsim, flexsim_carousel1, flexsim_carousel2]}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              title="Discrete Event Simulation"
+              description="Discrete event simulation software use a combination of graphical and script programming to simulate outcomes. The partially visual nature means that the coresponding languages are heavily object oriented."
+              //ghLink="https://github.com/soumyajit4419/Editor.io"
+              //demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/*<Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
