@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am most proficient in
               <i>
-                <b className="purple"> Python, and TypeScript, </b>
+                <b className="purple"> Python, JavaScript, and TypeScript, </b>
               </i>
               having used them throughout my career
               <br />

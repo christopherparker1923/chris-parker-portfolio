@@ -20,6 +20,10 @@ function AboutCard() {
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
+            {/* TODO add epic sailing picture, bouncing ball of paddle pickleball shot, a couple 3D designs in blender */}
+            <li className="about-activity">
+              <ImPointRight /> Sailing
+            </li>
             <li className="about-activity">
               <ImPointRight /> Kite surfing/skiing
             </li>
@@ -30,11 +34,21 @@ function AboutCard() {
               <ImPointRight /> 3D design in Blender
             </li>
           </ul>
-
-          {/* <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ textAlign: "justify" }}>
+            3 books that had an impact on me:
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer> */}
+          <ul>
+            {/* TODO add epic sailing picture, bouncing ball of paddle pickleball shot, a couple 3D designs in blender */}
+            <li className="about-activity">
+              <ImPointRight /> The Ministry for the Future
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> The Death of Ivan Ilyich
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Limits to Growth
+            </li>
+          </ul>
         </blockquote>
       </Card.Body>
     </Card>

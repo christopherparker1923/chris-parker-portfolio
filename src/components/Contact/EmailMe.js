@@ -44,12 +44,12 @@ function Contact() {
               I'D LOVE TO HEAR <span className="purple"> FROM YOU </span>
             </h1>
             <p className="contact-about-body">
-              You can find my contact info on my{" "}
-              <span className="purple"> resume </span> or feel free to use the
-              form below.
+              You can email me at{" "}
+              <span className="purple"> christopher.parker1923@gmail.com </span>{" "}
+              or feel free to use the form below
               <br />
-              <br />I look forward to hearing from you about a job or just
-              connecting to grow my network.
+              <br />I look forward to hearing from you about a job, or just
+              connecting to grow our respective networks
             </p>
           </Col>
         </Row>

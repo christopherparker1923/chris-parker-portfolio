@@ -11,10 +11,13 @@ import liareports_carousel5 from "../../Assets/Projects/liareports/carouselPhoto
 import linear_regression from "../../Assets/Projects/linear_regression/linear_regression.png";
 import linear_regression_carousel1 from "../../Assets/Projects/linear_regression/carouselPhoto1.png";
 import linear_regression_carousel2 from "../../Assets/Projects/linear_regression/carouselPhoto2.png";
-import linear_regression_carousel3 from "../../Assets/Projects/linear_regression/carouselphoto3.png";
+import linear_regression_carousel3 from "../../Assets/Projects/linear_regression/carouselPhoto3.png";
 import flexsim from "../../Assets/Projects/flexsim/flexsim.png";
 import flexsim_carousel1 from "../../Assets/Projects/flexsim/carouselPhoto1.png";
 import flexsim_carousel2 from "../../Assets/Projects/flexsim/carouselPhoto2.png";
+import localization from "../../Assets/Projects/localization/localization.png";
+import localization_carousel1 from "../../Assets/Projects/localization/carouselPhoto1.png";
+import localization_carousel2 from "../../Assets/Projects/localization/carouselPhoto2.png";
 
 function Projects() {
   return (
@@ -51,6 +54,34 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={flexsim}
+              carouselImages={[flexsim, flexsim_carousel1, flexsim_carousel2]}
+              isBlog={false}
+              title="Discrete Event Simulation"
+              description="Discrete event simulation software use a combination of graphical and script programming to simulate outcomes. The partially visual nature means that the coresponding languages are heavily object oriented."
+              //ghLink="https://github.com/soumyajit4419/Editor.io"
+              //demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={localization}
+              carouselImages={[
+                localization,
+                localization_carousel1,
+                localization_carousel2,
+              ]}
+              isBlog={false}
+              title="Autonomous Outdoor Localization"
+              description="Used a pair of sensors to perform autonomous localization of a pylon in a fixed area. The solution read real time data from time-of-flight bluetooth sensors, and speed and acceleration data from an on board IMU. We implemented both a Kalman filter, and a particle filter in Python to determine an optimal estimate of position at each sensor reading interval. The combination of sensors enabled centimeter level accuracy in determining position."
+              ghLink="https://github.com/christopherparker1923/localization"
+              //demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={linear_regression} //July 2023
               carouselImages={[
                 linear_regression,
@@ -66,30 +97,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={flexsim}
-              carouselImages={[flexsim, flexsim_carousel1, flexsim_carousel2]}
-              isBlog={false}
-              title="Discrete Event Simulation"
-              description="Discrete event simulation software use a combination of graphical and script programming to simulate outcomes. The partially visual nature means that the coresponding languages are heavily object oriented."
-              //ghLink="https://github.com/soumyajit4419/Editor.io"
-              //demoLink="https://editor.soumya-jit.tech/"
-            />
-          </Col>
-
           {/*<Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}

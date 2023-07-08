@@ -32,20 +32,28 @@ function About() {
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
+            <p style={{ color: "rgb(155 126 172)" }}>
+              “If you wish to build a ship, don’t drum up the people to gather
+              wood, divide work, and give orders. Instead, teach them to yearn
+              for the vast and endless sea“{" "}
+            </p>
+            <footer className="blockquote-footer">
+              Antoine de Saint-Exupery
+            </footer>
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          My <strong className="purple">Skillset </strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          My <strong className="purple">Toolkit</strong>
         </h1>
         <Toolstack />
 
-        <Github />
+        {/* <Github /> */}
       </Container>
     </Container>
   );

@@ -18,7 +18,7 @@ import {
   SiSolidity,
   SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { TbBrandGolang, TbBrandMantine, TbBrandGoland } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -38,9 +38,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandMantine />
+      </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col> */}
@@ -62,9 +62,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandGolang />
+      </Col>
     </Row>
   );
 }
