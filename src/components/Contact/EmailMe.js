@@ -105,47 +105,33 @@ function Contact() {
         </Row>
         <Row>
           <Col md={6} className="mb-2">
-            <Button onClick={setShowSuccess(true)} className="mb-2">
-              Toggle Toast <strong>with</strong> Animation
-            </Button>
-            <Toast show={showSuccess} onClose={setShowSuccess(false)}>
-              <Toast.Header>
-                <img
-                  src="holder.js/20x20?text=%20"
-                  className="rounded me-2"
-                  alt=""
-                />
-                <strong className="me-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-              </Toast.Header>
-              <Toast.Body>
-                Woohoo, you're reading this text in a Toast!
-              </Toast.Body>
+            <Toast
+              className="fixed-bottom-right"
+              show={showSuccess}
+              onClose={() => {
+                setShowSuccess(false);
+              }}
+              delay={2000}
+              autohide
+              bg="success"
+            >
+              <Toast.Body>Email sent!</Toast.Body>
             </Toast>
           </Col>
-          {/* <Col md={6} className="mb-2">
-            <Button onClick={setShowFail(true)} className="mb-2">
-              Toggle Toast <strong>without</strong> Animation
-            </Button>
+          <Col md={6} className="mb-2">
             <Toast
-              onClose={setShowFail(false)}
+              className="fixed-bottom-right"
               show={showFail}
-              animation={false}
+              onClose={() => {
+                setShowFail(false);
+              }}
+              delay={2000}
+              autohide
+              bg="danger"
             >
-              <Toast.Header>
-                <img
-                  src="holder.js/20x20?text=%20"
-                  className="rounded me-2"
-                  alt=""
-                />
-                <strong className="me-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-              </Toast.Header>
-              <Toast.Body>
-                Woohoo, you're reading this text in a Toast!
-              </Toast.Body>
+              <Toast.Body>Error sending, please try again.</Toast.Body>
             </Toast>
-          </Col>*/}
+          </Col>
         </Row>
       </Container>
     </Container>

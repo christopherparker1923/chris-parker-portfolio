@@ -22,7 +22,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Work</strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -41,7 +41,9 @@ function Projects() {
               ]}
               isBlog={false}
               title="LIAReports"
-              description="I developed this next.js React web app from scratch to standardize and expedite the design process. It utilizes a prisma db to store information on parts, manufacturers, vendors, and projects. Designers can build out hierarchical projects and populate them with parts, and project managers can track the order and receipt of those parts. Additonally, purchase orders and packing slips can be generated as PDFs."
+              description="I developed this next.js React web app from scratch to standardize and expedite the design process. 
+              It utilizes a prisma db to store information on parts, manufacturers, vendors, and projects. Designers can build out hierarchical projects and populate them with parts.
+              Project managers can then track the order and receipt of those parts. Finally, purchase orders and packing slips can be generated as PDFs."
               ghLink="https://github.com/christopherparker1923/liareports"
               //demoLink="https://chatify-49.web.app/"
             />

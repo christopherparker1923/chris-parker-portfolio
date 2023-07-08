@@ -20,19 +20,16 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               I fell in love with programming during my undergrad in
-              Mechatronics.
+              Mechatronics
               <br />
               <br />I am most proficient in
               <i>
                 <b className="purple"> Python, and TypeScript, </b>
               </i>
-              having used these professionaly since graduation.
+              having used them throughout my career
               <br />
-              <br />I am also familiar with other languages from my studies and
-              hobbying &nbsp;
-              <br />
-              <br />I am currently seeking a full time position, my best
-              attributes have always been my
+              <br />I am currently seeking a full time position, which will
+              allow me to leverage my
               <i>
                 <b className="purple"> dedication and quick learning</b>
               </i>
@@ -47,9 +44,7 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
