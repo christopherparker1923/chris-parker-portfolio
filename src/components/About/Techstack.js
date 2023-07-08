@@ -1,24 +1,24 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import { FaCode } from "react-icons/fa";
+// import { CgCPlusPlus } from "react-icons/cg";
+// import { FaCode } from "react-icons/fa";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
+  // DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
+  // DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
-  SiFirebase,
+  // SiRedis,
+  // SiFirebase,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  // SiSolidity,
+  // SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang, TbBrandMantine, TbBrandGoland } from "react-icons/tb";
+import { TbBrandGolang, TbBrandMantine } from "react-icons/tb";
 
 function Techstack() {
   return (

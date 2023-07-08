@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import liareports from "../../Assets/Projects/liareports/liareports.png";

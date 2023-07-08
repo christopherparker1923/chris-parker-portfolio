@@ -39,7 +39,7 @@ function ProjectCards(props) {
                   key={index}
                   className="d-block w-100"
                   src={image}
-                  alt={`Photo ${index}`}
+                  alt={`${index}`}
                 />
                 <Carousel.Caption>{`Photo ${index}`}</Carousel.Caption>
               </Carousel.Item>
