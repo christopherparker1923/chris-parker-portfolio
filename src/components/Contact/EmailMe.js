@@ -1,9 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
+import Toast from "react-bootstrap/Toast";
 
 function Contact() {
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showFail, setShowFail] = useState(false);
+
+  // const toggleShowSuccess = () => setShowSuccess(!showSuccess);
+  // const toggleShowFail = () => setShowFail(!showFail);
+
   const form = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,9 +25,11 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          setShowSuccess();
         },
         (error) => {
           console.log(error.text);
+          setShowFail();
         }
       );
     event.target.reset();
@@ -93,6 +102,50 @@ function Contact() {
               Send Message
             </Button>
           </Form>
+        </Row>
+        <Row>
+          <Col md={6} className="mb-2">
+            <Button onClick={setShowSuccess(true)} className="mb-2">
+              Toggle Toast <strong>with</strong> Animation
+            </Button>
+            <Toast show={showSuccess} onClose={setShowSuccess(false)}>
+              <Toast.Header>
+                <img
+                  src="holder.js/20x20?text=%20"
+                  className="rounded me-2"
+                  alt=""
+                />
+                <strong className="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+              </Toast.Header>
+              <Toast.Body>
+                Woohoo, you're reading this text in a Toast!
+              </Toast.Body>
+            </Toast>
+          </Col>
+          {/* <Col md={6} className="mb-2">
+            <Button onClick={setShowFail(true)} className="mb-2">
+              Toggle Toast <strong>without</strong> Animation
+            </Button>
+            <Toast
+              onClose={setShowFail(false)}
+              show={showFail}
+              animation={false}
+            >
+              <Toast.Header>
+                <img
+                  src="holder.js/20x20?text=%20"
+                  className="rounded me-2"
+                  alt=""
+                />
+                <strong className="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+              </Toast.Header>
+              <Toast.Body>
+                Woohoo, you're reading this text in a Toast!
+              </Toast.Body>
+            </Toast>
+          </Col>*/}
         </Row>
       </Container>
     </Container>
