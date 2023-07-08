@@ -5,6 +5,7 @@ function Particle() {
   return (
     <Particles
       id="tsparticles"
+      className="overlay"
       params={{
         particles: {
           number: {
