@@ -39,11 +39,11 @@ function Contact() {
       <Particle />
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col className="contact-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               I'D LOVE TO HEAR <span className="purple"> FROM YOU </span>
             </h1>
-            <p className="home-about-body">
+            <p className="contact-about-body">
               You can find my contact info on my{" "}
               <span className="purple"> resume </span> or feel free to use the
               form below.

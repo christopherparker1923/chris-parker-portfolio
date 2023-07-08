@@ -752,6 +752,20 @@ button:focus {
 /* Contact */
 /* --------- */
 
+.contact-about-description {
+  color: white !important;
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-about-body {
+  padding-top: 50px;
+  font-size: 1.2em !important;
+  text-align: center;
+}
+
 .fixed-bottom-right {
   position: fixed;
   bottom: 20px;
