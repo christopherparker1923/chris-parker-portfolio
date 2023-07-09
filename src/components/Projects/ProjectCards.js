@@ -22,31 +22,33 @@ function ProjectCards(props) {
 
   return (
     <>
-      <Modal show={photoModal}>
-        <Modal.Header
-          closeButton
-          onHide={() => {
-            setPhotoModal(false);
-          }}
-        >
-          <Modal.Title>Photos</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Carousel className="carousel">
-            {props.carouselImages.map((image, index) => (
-              <Carousel.Item key={index}>
-                <img
-                  key={index}
-                  className="d-block w-100"
-                  src={image}
-                  alt={`${index}`}
-                />
-                <Carousel.Caption>{`Photo ${index}`}</Carousel.Caption>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Modal.Body>
-      </Modal>
+      {props.carouselImages && (
+        <Modal show={photoModal}>
+          <Modal.Header
+            closeButton
+            onHide={() => {
+              setPhotoModal(false);
+            }}
+          >
+            <Modal.Title>Photos</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Carousel className="carousel">
+              {props.carouselImages.map((image, index) => (
+                <Carousel.Item key={index}>
+                  <img
+                    key={index}
+                    className="d-block w-100"
+                    src={image}
+                    alt={`${index}`}
+                  />
+                  <Carousel.Caption>{`Photo ${index}`}</Carousel.Caption>
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </Modal.Body>
+        </Modal>
+      )}
 
       <Card className="project-card-view">
         <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -64,17 +66,19 @@ function ProjectCards(props) {
 
           {"\n"}
           {"\n"}
-          <Button
-            style={{ marginLeft: "10px" }}
-            variant="primary"
-            onClick={() => {
-              console.log("modalopen");
-              setPhotoModal(true);
-            }}
-          >
-            <BsFillCameraFill /> &nbsp;
-            {"Photos"}
-          </Button>
+          {props.carouselImages && (
+            <Button
+              style={{ marginLeft: "10px" }}
+              variant="primary"
+              onClick={() => {
+                console.log("modalopen");
+                setPhotoModal(true);
+              }}
+            >
+              <BsFillCameraFill /> &nbsp;
+              {"Photos"}
+            </Button>
+          )}
 
           {"\n"}
           {"\n"}

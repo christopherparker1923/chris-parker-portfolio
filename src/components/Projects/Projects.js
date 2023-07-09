@@ -18,6 +18,7 @@ import flexsim_carousel2 from "../../Assets/Projects/flexsim/carouselPhoto2.png"
 import localization from "../../Assets/Projects/localization/localization.png";
 import localization_carousel1 from "../../Assets/Projects/localization/carouselPhoto1.png";
 import localization_carousel2 from "../../Assets/Projects/localization/carouselPhoto2.png";
+import bookstore from "../../Assets/Projects/bookstore/bookstore.png";
 
 function Projects() {
   return (
@@ -48,25 +49,22 @@ function Projects() {
               It utilizes a prisma db to store information on parts, manufacturers, vendors, and projects. Designers can build out hierarchical projects and populate them with parts.
               Project managers can then track the order and receipt of those parts. Finally, purchase orders and packing slips can be generated as PDFs."
               ghLink="https://github.com/christopherparker1923/liareports"
-              //demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={flexsim}
+              imgPath={flexsim} //2018
               carouselImages={[flexsim, flexsim_carousel1, flexsim_carousel2]}
               isBlog={false}
               title="Discrete Event Simulation"
               description="Discrete event simulation software use a combination of graphical and script programming to simulate outcomes. The partially visual nature means that the coresponding languages are heavily object oriented."
-              //ghLink="https://github.com/soumyajit4419/Editor.io"
-              //demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={localization}
+              imgPath={localization} //2020
               carouselImages={[
                 localization,
                 localization_carousel1,
@@ -76,7 +74,6 @@ function Projects() {
               title="Autonomous Outdoor Localization"
               description="Used a pair of sensors to perform autonomous localization of a pylon in a fixed area. The solution read real time data from time-of-flight bluetooth sensors, and speed and acceleration data from an on board IMU. We implemented both a Kalman filter, and a particle filter in Python to determine an optimal estimate of position at each sensor reading interval. The combination of sensors enabled centimeter level accuracy in determining position."
               ghLink="https://github.com/christopherparker1923/localization"
-              //demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -93,7 +90,16 @@ function Projects() {
               title="Linear Regression"
               description="This is a tool I built using PySimpleGUI, matplotlib, and scikit. The user can choose a csv with an x vector and a y vector to determine the level of corellation between the data sets. "
               ghLink="https://github.com/christopherparker1923/linear-regression"
-              //demoLink="https://blogs.soumya-jit.tech/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bookstore} //July 2023
+              isBlog={false}
+              title="Book Information API"
+              description="REST API built in Golang and tested using Postman."
+              ghLink="https://github.com/christopherparker1923/learning-go"
             />
           </Col>
 
