@@ -83,7 +83,7 @@ function Projects() {
               ]}
               isBlog={false}
               title="Autonomous Outdoor Localization"
-              description="Used a pair of sensors to perform autonomous localization of a pylon in a fixed area. The solution read real time data from time-of-flight bluetooth sensors, and speed and acceleration data from an on board IMU. We implemented both a Kalman filter, and a particle filter in Python to determine an optimal estimate of position at each sensor reading interval. The combination of sensors enabled centimeter level accuracy in determining position."
+              description="Used a pair of sensors to perform autonomous localization of a pylon in a fixed area. The solution read real time data from time-of-flight bluetooth sensors, and speed and acceleration data from an on board IMU. We implemented both a Kalman filter, and a particle filter in Python to determine an optimal estimate of position at each sensor reading interval. The combination of sensors enabled centimeter level accuracy in determining position. The algorithm was written in python and ran on ROS (Robot OS)."
               ghLink="https://github.com/christopherparker1923/localization"
             />
           </Col>
