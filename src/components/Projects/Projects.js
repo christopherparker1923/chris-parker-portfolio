@@ -19,6 +19,10 @@ import localization from "../../Assets/Projects/localization/localization.png";
 import localization_carousel1 from "../../Assets/Projects/localization/carouselPhoto1.png";
 import localization_carousel2 from "../../Assets/Projects/localization/carouselPhoto2.png";
 import bookstore from "../../Assets/Projects/bookstore/bookstore.png";
+import carbon_calculator from "../../Assets/Projects/carbon_calculator/carbon_calculator.png";
+import carbon_calculator_carousel1 from "../../Assets/Projects/carbon_calculator/carouselPhoto1.png";
+import carbon_calculator_carousel2 from "../../Assets/Projects/carbon_calculator/carouselPhoto2.png";
+import carbon_calculator_carousel3 from "../../Assets/Projects/carbon_calculator/carouselPhoto3.png";
 
 function Projects() {
   return (
@@ -54,11 +58,18 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={flexsim} //2018
-              carouselImages={[flexsim, flexsim_carousel1, flexsim_carousel2]}
+              imgPath={carbon_calculator}
+              carouselImages={[
+                carbon_calculator,
+                carbon_calculator_carousel1,
+                carbon_calculator_carousel2,
+                carbon_calculator_carousel3,
+              ]}
               isBlog={false}
-              title="Discrete Event Simulation"
-              description="Discrete event simulation software use a combination of graphical and script programming to simulate outcomes. The partially visual nature means that the coresponding languages are heavily object oriented."
+              title="Carbon Footprint Calculator"
+              description="The carbon calculator allows users to estimate their carbon footprint based on the specific make, model, and production year of the car they drive. This data comes from the Carbon Interface API. This app also uses React and next.js. "
+              ghLink="https://github.com/christopherparker1923/carbon-footprint"
+              demoLink="https://carbon-footprint-christopherparker1923.vercel.app/"
             />
           </Col>
 
@@ -103,18 +114,17 @@ function Projects() {
             />
           </Col>
 
-          {/*<Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={flexsim} //2018
+              carouselImages={[flexsim, flexsim_carousel1, flexsim_carousel2]}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Discrete Event Simulation"
+              description="Discrete event simulation software use a combination of graphical and script programming to simulate outcomes. The partially visual nature means that the coresponding languages are heavily object oriented."
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/*<Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}

@@ -8,6 +8,7 @@ import {
   // SiMacos,
   SiDiscord,
   SiPlanetscale,
+  SiWireshark,
 } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
@@ -34,6 +35,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPlanetscale />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiWireshark />
       </Col>
     </Row>
   );
